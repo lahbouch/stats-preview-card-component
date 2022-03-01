@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white1: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --font-size: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: var(--Very-dark-blue);
+  font-family: "Inter", sans-serif;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vmin;
+}
+.container {
+  background-color: var(--Dark-desaturated-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 768px;
+  margin: 0 30px;
+}
+
+.header-section picture img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.header-section {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.header-section .overly {
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  background-color: var(--Soft-violet);
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+
+.body-section {
+  text-align: center;
+  padding: 0 30px;
+}
+.body-section h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+.body-section h1 span {
+  color: var(--Soft-violet);
+}
+
+.body-section p {
+  margin-bottom: 35px;
+  color: var(--Slightly-transparent-white1);
+  font-size: 0.9rem;
+}
+.body-section > .stats > div {
+  margin-bottom: 30px;
+}
+.stats > div > strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.stats > div > span {
+  text-transform: uppercase;
+  color: var(--Slightly-transparent-white);
+  font-size: 0.8rem;
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 30px 20px;
+  }
+  body {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+  }
+  .body-section .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  .body-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 50px 60px;
+  }
+
+  .header-section {
+    margin: 0;
+    width: 100%;
+  }
+  .header-section img {
+    display: block;
+  }
+}
