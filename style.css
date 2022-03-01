@@ -114,6 +114,15 @@ body {
     padding: 50px 60px;
   }
 
+  .body-section p {
+    line-height: 25px;
+  }
+
+  .body-section h1 {
+    font-size: 2rem;
+    line-height: 45px;
+  }
+
   .header-section {
     margin: 0;
     width: 100%;
